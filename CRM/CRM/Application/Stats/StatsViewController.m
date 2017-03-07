@@ -20,8 +20,8 @@
 
 - (void)viewDidLoad
 {
-    [self setInitparam];
-    
+    //[self setInitparam];
+    [self performSelector:@selector(setInitparam) withObject:nil afterDelay:0.0];
     [self setPagingController];
     
     [super viewDidLoad];

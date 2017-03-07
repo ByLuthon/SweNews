@@ -100,7 +100,7 @@
     {
         isDiscover = TRUE;
         
-        DiscoverViewController *currentObje = [self.storyboard instantiateViewControllerWithIdentifier:@"DiscoverViewController"];
+        NetworkViewController *currentObje = [self.storyboard instantiateViewControllerWithIdentifier:@"NetworkViewController"];
         currentObje.view.frame = CGRectMake(WIDTH*2, 0, WIDTH, scrl.frame.size.height);
         [self addChildViewController:currentObje];
         [scrl addSubview:currentObje.view];
@@ -147,9 +147,12 @@
     {
         isProfile = TRUE;
         
+        
         ProfileViewController *currentObje = [self.storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
         currentObje.view.frame = CGRectMake(WIDTH*4, 0, WIDTH, scrl.frame.size.height);
         [self addChildViewController:currentObje];
+        //currentObje.strUserName = @"Bhavesh Nayi";
+        //currentObje.isLoginUser = YES;
         [scrl addSubview:currentObje.view];
         [currentObje didMoveToParentViewController:self];
     }

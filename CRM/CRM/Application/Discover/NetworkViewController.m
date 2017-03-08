@@ -106,11 +106,11 @@
 {
     if (section == 0)
     {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] ;
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 40)] ;
         tableView.sectionHeaderHeight = view.frame.size.height;
         
         UIButton *btn =  [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setFrame:CGRectMake(0, 5, WIDTH, 25)];
+        [btn setFrame:CGRectMake(0, 5, WIDTH, 30)];
         [btn setTitle:@"See more" forState:UIControlStateNormal];
         btn.titleLabel.font = setFontBold(18);
         [btn setTitleColor:ColorFromHEX(@"#368BD7") forState:UIControlStateNormal];
@@ -134,7 +134,7 @@
 {
     if (section == 0)
     {
-        return 30;
+        return 40;
     }
     else
     {

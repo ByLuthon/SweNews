@@ -19,7 +19,15 @@
     
     scrl.contentSize = CGSizeMake(WIDTH * 5 , scrl.frame.size.height);
 
+    HomeViewController *currentObje = [self.storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    currentObje.view.frame = CGRectMake(0, 0, WIDTH, scrl.frame.size.height);
+    [self addChildViewController:currentObje];
+    [scrl addSubview:currentObje.view];
+    [currentObje didMoveToParentViewController:self];
+    isHome = TRUE;
+    
     [self HomeviewController];
+
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

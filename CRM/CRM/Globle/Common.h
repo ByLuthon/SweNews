@@ -12,6 +12,14 @@
 #import "HomeViewController.h"
 
 #import "NewsViewController.h"
+#import "NewsDetailsViewController.h"
+#import "TrendingViewController.h"
+#import "FollowTagsViewController.h"
+#import "PublicationsViewController.h"
+#import "PublicationDetailsViewController.h"
+#import "TagsDetailsViewController.h"
+#import "PersonalizeViewController.h"
+
 
 #import "NetworkViewController.h"
 #import "ConnectionViewController.h"
@@ -32,10 +40,19 @@
 #import "Cell_Invitations.h"
 #import "Cell_InvationsPeople.h"
 #import "cell_user.h"
+#import "Cell_SNews.h"
+#import "Cell_People.h"
+#import "Cell_Tags.h"
+#import "Cell_TrendingDetails.h"
+#import "Cell_moreStories.h"
+#import "Cell_Publications.h"
+#import "Cell_TagsList.h"
+
 
 
 #pragma mark - Collection Cell
-
+#import "CollectionCell_Trending.h"
+#import "CollectionCell_Publications.h"
 
 
 
@@ -67,7 +84,6 @@
 #import "GMDCircleLoader.h"
 #import "IQUIView+IQKeyboardToolbar.h"
 #import "FTPopOverMenu.h"
-#import "UzysAssetsPickerController.h"
 #import "TWRChart.h"
 #import "DTParallaxTableView.h"
 #import "VENTokenField.h"
@@ -80,6 +96,10 @@
 #pragma mark -
 #pragma mark -
 //--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
 
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
